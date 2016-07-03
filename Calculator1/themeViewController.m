@@ -24,7 +24,13 @@
 - (void)viewDidLoad {
     isSateDefine=nil;
     [super viewDidLoad];
-    currentSelcetTheme=@"黄色";
+    NSDictionary *themeDic=[Common configGetTheme:@"key_setting_theme"];
+
+    if (!themeDic[@"theme_name"]) {
+        currentSelcetTheme=@"默认";
+    }else{
+        currentSelcetTheme=themeDic[@"theme_name"];
+    }
     themeArray=[self loadTheme];
     [self loadThemeList];
 
@@ -230,7 +236,6 @@
     // 获取沙盒目录
     NSString *fullPath=[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:imageName];
     //将图片写入文件
-
     [imageDate writeToFile:fullPath atomically:NO];
 }
 #pragma mark=====ios7 ios8都要调用方法，选择完成后调用该方法
@@ -240,23 +245,12 @@
     isSateDefine=@"1";
     [Common configSet:@"theme_Define_background" value:isSateDefine];
     NSLog(@"isSateDefine%@",isSateDefine);
-
-    //保存图片到本地，上传图片到服务器需要使用
     [self saveImage:image withName:@"backgroundImage.png"];
-    
-    //按路径读取文件
-//    NSString *fullPath=[[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"backgroundImage.png"];
-//    UIImage *saveDefineImage=[[UIImage alloc] initWithContentsOfFile:fullPath];
-    
 }
-
-
-
 #pragma mark=====ios7 ios8都要调用方法，按取消调用该方法
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
 - (IBAction)gotoBack:(id)sender {
     [self.navigationController popViewControllerAnimated:true];
 }

@@ -118,6 +118,7 @@
     if (musicState) {
         [self playSoundEffect:@"click2.wav"];
     }
+    [self setSelectImageHidden];
     self.selectImage3.hidden=NO;
     }
 - (IBAction)clickMuisc4:(id)sender {
