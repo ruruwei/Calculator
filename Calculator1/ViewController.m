@@ -715,7 +715,7 @@
             break;
         case 2:
             [self clearDate];
-            numberCurrent = historyData[secletIndexPath.row][@"ResultStr"];
+            numberCurrent = [historyData[secletIndexPath.row][@"ResultStr"] stringByReplacingOccurrencesOfString:@"," withString:@""];
             [self setNumberDisplay:numberCurrent];
             
             CGPoint scrollerViewOffset = self.scrollerView.contentOffset;

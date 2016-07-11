@@ -23,7 +23,6 @@
 		DD1DFBCB1D18DAA40058EA30 /* savehistoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1DFBCA1D18DAA40058EA30 /* savehistoryData.m */; };
 		DD2130531CCDC6FB004814B8 /* setViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2130511CCDC6FB004814B8 /* setViewController.m */; };
 		DD2130541CCDC6FB004814B8 /* setViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2130521CCDC6FB004814B8 /* setViewController.xib */; };
-		DD3C18A61D22607900437B7B /* set2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD3C18A51D22607900437B7B /* set2.png */; };
 		DD3C18A81D22E7AA00437B7B /* click2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD3C18A71D22E7AA00437B7B /* click2.wav */; };
 		DD3C18AC1D22E89000437B7B /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD3C18AB1D22E89000437B7B /* click.wav */; };
 		DD5FB5301CD8F82300C4955C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FB52F1CD8F82300C4955C /* QuartzCore.framework */; };
@@ -84,7 +83,6 @@
 		DD2130501CCDC6FB004814B8 /* setViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setViewController.h; sourceTree = "<group>"; };
 		DD2130511CCDC6FB004814B8 /* setViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setViewController.m; sourceTree = "<group>"; };
 		DD2130521CCDC6FB004814B8 /* setViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = setViewController.xib; sourceTree = "<group>"; };
-		DD3C18A51D22607900437B7B /* set2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = set2.png; sourceTree = "<group>"; };
 		DD3C18A71D22E7AA00437B7B /* click2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click2.wav; sourceTree = "<group>"; };
 		DD3C18AB1D22E89000437B7B /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 		DD5FB52F1CD8F82300C4955C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -257,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				DDEE59A21CBCEDEB00FFFC46 /* Assets.xcassets */,
-				DD3C18A51D22607900437B7B /* set2.png */,
 				DD1DFB6E1D17C4D00058EA30 /* saveHistoryData */,
 				DD12E4681CD0E54B00B8AB95 /* resource */,
 				DDEE59991CBCEDEB00FFFC46 /* AppDelegate.h */,
@@ -407,7 +404,6 @@
 				DD3C18AC1D22E89000437B7B /* click.wav in Resources */,
 				DD12E4211CCE477300B8AB95 /* themeViewController.xib in Resources */,
 				DDEE59A61CBCEDEB00FFFC46 /* LaunchScreen.storyboard in Resources */,
-				DD3C18A61D22607900437B7B /* set2.png in Resources */,
 				DDEE59A31CBCEDEB00FFFC46 /* Assets.xcassets in Resources */,
 				DDEE59A11CBCEDEB00FFFC46 /* Main.storyboard in Resources */,
 				DD3C18A81D22E7AA00437B7B /* click2.wav in Resources */,
